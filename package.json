@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-class",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "Test if a value is a class.",
   "license": "Apache-2.0",
   "author": {
