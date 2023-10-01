@@ -41,7 +41,7 @@
     "@stdlib/function-to-string": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/assert-has-class-support": "^0.0.8",
+    "@stdlib/assert-has-class-support": "^0.1.0",
     "@stdlib/assert-is-boolean": "^0.1.0",
     "@stdlib/bench": "^0.1.0",
     "@stdlib/utils-eval": "^0.1.0",
