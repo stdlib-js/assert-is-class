@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@deno/mod.js';
+import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@v0.1.1-deno/mod.js';
 ```
 
 #### isClass( value )
@@ -86,7 +86,7 @@ bool = isClass( null );
 <!-- eslint-disable no-restricted-syntax, no-empty-function -->
 
 ```javascript
-import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@deno/mod.js';
+import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@v0.1.1-deno/mod.js';
 
 var bool = isClass( class Person {} );
 // returns true
