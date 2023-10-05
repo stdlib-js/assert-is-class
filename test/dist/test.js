@@ -64,5 +64,5 @@ tape( 'the function returns `false` if not provided an ES2015 class', function t
 // Run positive tests if environment supports class...
 
 if ( hasClassSupport ) {
-	require( './../..2015-class' ); // eslint-disable-line stdlib/no-unassigned-require
+	require( './es2015-class' ); // eslint-disable-line stdlib/no-unassigned-require
 }
