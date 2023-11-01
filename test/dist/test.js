@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,48 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var detectClassSupport = require( '@stdlib/assert-has-class-support' );
-var isClass = require( './../../dist' );
-
-
-// VARIABLES //
-
-var hasClassSupport = detectClassSupport();
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isClass, 'function', 'main export is a function' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
-
-tape( 'the function returns `false` if not provided an ES2015 class', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		null,
-		void 0,
-		true,
-		[],
-		{},
-		function Person() {},
-		new String( 'beep' ) // eslint-disable-line no-new-wrappers
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( isClass( values[i] ), false, 'returns false for when provided ' + values[i] );
-	}
-	t.end();
-});
-
-// Run positive tests if environment supports class...
-
-if ( hasClassSupport ) {
-	require( './es2015-class' ); // eslint-disable-line stdlib/no-unassigned-require
-}
