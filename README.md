@@ -35,38 +35,30 @@ limitations under the License.
 
 > Test if a value is a [class][mdn-class].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-class
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isClass = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isClass = require( 'path/to/vendor/umd/assert-is-class/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isClass;
-})();
-</script>
+var isClass = require( '@stdlib/assert-is-class' );
 ```
 
 #### isClass( value )
@@ -109,13 +101,8 @@ bool = isClass( null );
 
 <!-- eslint-disable no-restricted-syntax, no-empty-function, node/no-unsupported-features/es-syntax -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var isClass = require( '@stdlib/assert-is-class' );
 
 var bool = isClass( class Person {} );
 // returns true
@@ -131,11 +118,6 @@ bool = isClass( {} );
 
 bool = isClass( null );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
