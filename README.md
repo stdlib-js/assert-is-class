@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-class/tags). For example,
+
+```javascript
 import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@v0.2.1-deno/mod.js';
 ```
 
@@ -86,7 +91,7 @@ bool = isClass( null );
 <!-- eslint-disable no-restricted-syntax, no-empty-function, node/no-unsupported-features/es-syntax -->
 
 ```javascript
-import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@v0.2.1-deno/mod.js';
+import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@deno/mod.js';
 
 var bool = isClass( class Person {} );
 // returns true
