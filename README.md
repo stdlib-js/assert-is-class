@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@esm/index.mjs';
+import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@v0.2.2-esm/index.mjs';
 ```
 
 #### isClass( value )
@@ -91,7 +91,7 @@ bool = isClass( null );
 <body>
 <script type="module">
 
-import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@esm/index.mjs';
+import isClass from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-class@v0.2.2-esm/index.mjs';
 
 var bool = isClass( class Person {} );
 // returns true
